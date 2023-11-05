@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply text-dim-400 dark:text-white hover:text-dim-600  dark:hover:text-dim-600 transition duration-[300] font-medium flex items-center;
+  }
+  .spanLink {
+    @apply px-3 hidden lg:inline font-bold;
+  }
+  .textarea {
+    @apply w-full h-24 my-3 resize-none rounded-sm bg-transparent border border-[#ddd] dark:border-dim-200 focus:outline-none p-1 caret-dim-50 text-black dark:text-white;
+  }
+  .borderDiv {
+    @apply h-2 bg-[#ddd] dark:bg-dim-300 border-y-2 border-[#eee] dark:border-dim-200 w-full my-3;
+  }
+  .profile {
+    @apply w-12 h-12 rounded-full;
+  }
+  .follow {
+    @apply py-1 px-2 border-2 border-dim-50 rounded-md dark:bg-dim-700 text-white dark:text-dim-50 bg-dim-600;
+  }
+  .btn {
+    @apply bg-dim-50 py-2 rounded-full font-bold text-white;
+  }
+  .icon {
+    @apply text-dim-200 cursor-pointer dark:text-white text-xs md:text-sm  hover:text-dim-50 dark:hover:text-dim-50 transition duration-300;
+  }
+}
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #5f99f7;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #ddd;
+  }
+  .dark ::-webkit-scrollbar-track {
+    background-color: #38444d;
+  }
+}

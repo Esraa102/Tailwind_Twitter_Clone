@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link rel="shortcut icon" href="images/social-media-5995251_640.png" />
+    <!--Font Awesome Css File-->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Tailwind Output Css File-->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="bg-white dark:bg-dim-900">
+    <div class="container mx-auto h-screen flex xl:max-w-[1200px]">
+      <!--LEFT-->
+      <div
+        class="w-[20%] flex flex-col gap-y-4 justify-between p-4 border-r-2 border-dim-50 items-center lg:items-start"
+      >
+        <div class="flex flex-col gap-y-3 items-center lg:items-start">
+          <a href="#" class="text-2xl sm:text-5xl text-dim-50"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="text-dim-50"
+            ><i class="fa-solid fa-house"></i>
+            <span class="spanLink">Home</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-hashtag"></i>
+            <span class="spanLink">Explore</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-bell"></i>
+            <span class="spanLink">Notifications</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-envelope"></i>
+            <span class="spanLink">Messages</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-bookmark"></i>
+            <span class="spanLink">Bookmarks</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-list"></i>
+            <span class="spanLink">Lists</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-user"></i>
+            <span class="spanLink">Profile</span></a
+          >
+          <a href="#" class="link"
+            ><i class="fa-solid fa-ellipsis"></i>
+            <span class="spanLink">More</span></a
+          >
+          <button class="w-full btn">
+            <i class="fa-solid fa-feather lg:hidden"></i>
+            <span class="spanLink">Tweet</span>
+          </button>
+        </div>
+        <!--Porfile-->
+        <div class="flex lg:justify-between lg:items-center lg:w-full">
+          <div class="flex items-center gap-x-2">
+            <img
+              class="profile"
+              src="images/clement-helardot-95YRwf6CNw8-unsplash.jpg"
+              alt=""
+            />
+            <div class="hidden lg:block">
+              <span class="text-sm text-dim-700 font-bold dark:text-white"
+                >Esraa</span
+              >
+              <span class="text-sm text-dim-200 -my-1 block">@esraa in</span>
+            </div>
+          </div>
+          <span
+            class="text-dim-300 dark:text-white cursor-pointer hidden lg:inline"
+            ><i class="fa-solid fa-angle-down"></i
+          ></span>
+        </div>
+      </div>
+      <!--CENTER-->
+      <div class="w-[100%] lg:w-[50%] h-full overflow-y-auto">
+        <!--Header-->
+        <div
+          class="p-3 border-b-2 border-[#dddd] dark:border-dim-400 w-full flex items-center justify-between bg-white dark:bg-dim-900 sticky top-0 left-0 z-10"
+        >
+          <span class="text-dim-400 dark:text-white font-bold text-xl"
+            >Home</span
+          >
+          <span class="text-dim-50 text-xl"
+            ><i class="fa-brands fa-twitter"></i
+          ></span>
+        </div>
+        <!--Tweet Box-->
+        <div class="p-3">
+          <div class="flex gap-x-3 items-center">
+            <img src="images/uwp4099552.png" class="profile" alt="image" />
+            <span class="text-dim-200 text-sm">What's Happening?</span>
+          </div>
+          <textarea
+            class="textarea"
+            placeholder="Write Something..."
+          ></textarea>
+          <div class="flex items-center justify-between">
+            <div>
+              <a href="#" class="text-dim-500 dark:text-dim-50 px-1 inline"
+                ><i class="fa-solid fa-image"></i
+              ></a>
+              <a href="#" class="text-dim-500 dark:text-dim-50 px-1 inline"
+                ><i class="fa-solid fa-language"></i
+              ></a>
+              <a href="#" class="text-dim-500 dark:text-dim-50 px-1 inline"
+                ><i class="fa-solid fa-file"></i
+              ></a>
+              <a href="#" class="text-dim-500 dark:text-dim-50 px-1 inline"
+                ><i class="fa-solid fa-face-smile"></i
+              ></a>
+              <a href="#" class="text-dim-500 dark:text-dim-50 px-1 inline"
+                ><i class="fa-solid fa-box"></i
+              ></a>
+            </div>
+            <button class="py-2 px-6 btn">Tweet</button>
+          </div>
+        </div>
+
+        <div
+          class="p-3 border-y-2 border-[#ddd] dark:border-dim-200 text-dim-50 text-center"
+        >
+          Show 9 Tweets
+        </div>
+        <!--Show Tweets-->
+        <div>
+          <div class="p-3 flex flex-col gap-x-2 lg:flex-row">
+            <img class="profile" src="images/uwp4099552.png" />
+            <div>
+              <div class="text-dim-300 dark:text-white text-xl">
+                Esraa <span class="text-dim-200 text-sm">@esraa</span>
+                <span class="text-dim-200 text-sm">Now.</span>
+              </div>
+              <p class="p-3 text-dim-300 dark:text-white text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                corporis repellat repudiandae deserunt excepturi vel sequi
+                iusto, doloremque ipsa laboriosam aut quas fugit praesentium!
+                Non ut fuga quidem neque harum.
+              </p>
+              <p class="p-3 text-dim-300 dark:text-white text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+              <p class="p-3 text-dim-300 dark:text-white text-sm">
+                corporis repellat repudiandae
+                <span class="text-dim-50 font-bold">#deserunt</span>
+              </p>
+              <img
+                class="w-full mx-auto rounded-md my-3"
+                src="images/13664377_life_style_working_11.jpg"
+                alt=""
+              />
+              <div class="p-3 w-full flex items-center justify-between">
+                <span class="icon"
+                  ><i class="fa-solid fa-comment"></i> 1,234</span
+                >
+                <span class="icon"
+                  ><i class="fa-solid fa-repeat"></i> 1,234</span
+                >
+                <span class="icon hover:text-red-700 dark:hover:text-red-700"
+                  ><i class="fa-solid fa-heart"></i> 1,234</span
+                >
+                <span class="icon"
+                  ><i class="fa-solid fa-share"></i> 1,234</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="borderDiv"></div>
+          <div class="p-3 text-dim-900 dark:text-white">
+            <h3 class="text-center text-2xl my-3 font-bold">
+              Customize Your View
+            </h3>
+            <p class="text-center text-sm text-dim-200">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus cupiditate iste animi a, modi praesentium dicta .
+            </p>
+            <button
+              id="switcher"
+              class="text-white py-2 px-6 my-3 btn block mx-auto"
+            >
+              <i class="fa-solid fa-cloud-moon lg:hidden"></i>
+              <span class="spanLink">Toggle Dark Mode</span>
+            </button>
+          </div>
+          <div class="borderDiv"></div>
+          <!--Loading Spin-->
+          <div>
+            <svg
+              class="animate-spin w-6 h-6 rounded-full border-4 border-t-4 border-t-dim-50 dark:border-t-dim-50 dark:border-dim-400 border-[#ddd] block mt-3 mx-auto mb-8"
+              viewBox="0 0 24 24"
+            ></svg>
+          </div>
+        </div>
+      </div>
+      <!--RIGHT-->
+      <div class="hidden lg:block md:w-[30%] p-3 overflow-y-auto">
+        <div
+          class="flex gap-x-2 items-center p-2 bg-[#eee] dark:bg-dim-200 rounded-full"
+        >
+          <i
+            class="fa-solid fa-magnifying-glass text-dim-200 dark:text-dim-300"
+          ></i>
+          <input
+            class="p-1 w-full bg-transparent focus:outline-none focus:border-none caret-dim-50 text-black dark:text-white text-sm"
+            type="search"
+            placeholder="search Here..."
+          />
+        </div>
+        <div class="p-1 my-2 bg-[#eee] dark:bg-dim-300 rounded-md">
+          <div
+            class="text-dim-900 font-bold cursor-pointer dark:text-white text-sm py-4 px-2 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            What's Happening?
+          </div>
+          <div
+            class="text-dim-300 cursor-pointer dark:text-white text-sm py-4 px-2 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            <span class="font-bold">#Palenstine</span>
+            <span class="text-sm text-dim-200 block">30,7K</span>
+          </div>
+          <div
+            class="text-dim-300 cursor-pointer dark:text-white text-sm py-4 px-2 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            <span class="font-bold">Elzero Web School</span>
+            <span class="text-sm text-dim-200 block">1.1M</span>
+          </div>
+          <div
+            class="text-dim-50 text-sm py-4 px-2 cursor-pointer font-semibold"
+          >
+            Show More
+          </div>
+        </div>
+        <div class="p-1 my-2 bg-[#eee] dark:bg-dim-300 rounded-md">
+          <h2
+            class="text-center font-bold text-dim-900 dark:text-white my-2 py-3 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            What To Follow
+          </h2>
+          <div
+            class="flex items-center justify-between my-2 px-2 py-4 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            <div class="flex items-center gap-x-2">
+              <img
+                class="profile"
+                src="images/8713df43-74c2-4501-a4a5-b43e69281bdd.jpg"
+                alt=""
+              />
+              <div>
+                <span class="block text-dim-900 font-semibold dark:text-white"
+                  >Anna Blue</span
+                >
+                <span class="text-sm block text-dim-200">@anna_blue</span>
+              </div>
+            </div>
+            <button class="follow">Follow</button>
+          </div>
+          <div
+            class="flex items-center justify-between my-2 px-2 py-4 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            <div class="flex items-center gap-x-2">
+              <img
+                class="profile"
+                src="images/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg"
+                alt=""
+              />
+              <div>
+                <span class="block text-dim-900 font-semibold dark:text-white"
+                  >Elzero Web School</span
+                >
+                <span class="text-sm block text-dim-200"
+                  >@elzero-web-school</span
+                >
+              </div>
+            </div>
+            <button class="follow">Follow</button>
+          </div>
+          <div
+            class="animate-pulse flex justify-between p-2 border-b-2 border-[#ddd] dark:border-b-dim-200"
+          >
+            <div class="w-12 h-12 rounded-full bg-[grey] dark:bg-dim-200"></div>
+            <div class="w-[80%]">
+              <div class="h-6 bg-[grey] dark:bg-dim-200 rounded-md my-2"></div>
+              <div
+                class="h-6 w-1/2 bg-[grey] dark:bg-dim-200 rounded-md my-2"
+              ></div>
+              <div class="h-6 w-1/3 bg-[grey] dark:bg-dim-200 rounded-md"></div>
+            </div>
+          </div>
+          <div class="text-dim-50 text-sm p-2 cursor-pointer font-bold">
+            Show More
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let switcher = document.getElementById("switcher");
+      switcher.addEventListener("click", () => {
+        document.getElementsByTagName("html")[0].classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
